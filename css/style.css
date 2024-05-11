@@ -24,6 +24,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -35%);
+    overflow: hidden;
 }
 
 .text-box h1 {
@@ -108,7 +109,7 @@ body {
 
 .main {
     background-color: rgb(208, 239, 247);
-    height: 95vh;
+    height: 1200px;
     margin-top: -0,5rem;
     text-align: center;
     padding-top: 5rem;
@@ -120,4 +121,66 @@ body {
     font-size: 3rem;
     text-shadow: 0 0 3px #9b019b85;
     text-transform: uppercase;   
+}
+
+.gallery {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
+
+.gallery_photo {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    outline-offset: 1rem;
+    position: absolute;
+    width: 400px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo:hover {
+    outline: 1.8rem solid rgba(184, 10, 10, 0.582);
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.gallery_photo-2 {
+    left: 5%;
+    top: 1%;
+    width: 350px;
+}
+
+.gallery_photo-1 {
+    left: 55%;
+    top: 45%;
+}
+
+.gallery_photo-3 {
+    left: 25%;
+    top: 20%;
+    width: 500px;
+}
+
+.footer {
+    color: rgb(170, 170, 143);
+    font-size: 2rem;
+    height: 200px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    color: rgb(170, 170, 143);
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: rgba(184, 10, 10, 0.582);
+    transform: scale(1.2);
 }
