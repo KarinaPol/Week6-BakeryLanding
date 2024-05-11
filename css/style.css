@@ -10,7 +10,6 @@
 body {
     font-family: "Sedan SC", serif;
     line-height: 2;
-    overflow: hidden;
 }
 
 .header {
@@ -105,4 +104,20 @@ body {
 .btn-active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(5px);
+}
+
+.main {
+    background-color: rgb(208, 239, 247);
+    height: 95vh;
+    margin-top: -0,5rem;
+    text-align: center;
+    padding-top: 5rem;
+    clip-path: polygon(0% 15%, 25% 25%, 15% 0%, 85% 0%, 75% 25%, 100% 15%, 100% 85%, 75% 75%, 85% 100%, 15% 100%, 25% 75%, 0% 85%);
+}
+
+.main h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0 0 3px #9b019b85;
+    text-transform: uppercase;   
 }
